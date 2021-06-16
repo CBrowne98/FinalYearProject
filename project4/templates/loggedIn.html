@@ -1,0 +1,42 @@
+{% extends 'partial/layout.html' %}
+
+{% block content %}
+    <form action="/calculateFitness" method="post" class="form formSide">
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Height(cm)</label>
+                <input type="text" class="form-control" id="heightInput" , name="heightInput" placeholder="20" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress">Weight(Kg)</label>
+                <input type="text" class="form-control" id="weightInput" , name="weightInput" placeholder="20" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="ageInput">Age</label>
+                <input type="text" class="form-control" id="ageInput" , name="ageInput" placeholder="20" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputAddress2">Number of children</label>
+                <input type="text" class="form-control" id="childrenInput" , name="childrenInput" placeholder="0" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputState">Smoker</label>
+                <select id="smokerInput" , name="smokerInput" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Yes</option>
+                    <option>No</option>
+                </select>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="sexInput">Sex</label>
+                <select id="sexInput" , name="sexInput" class="form-control">
+                    <option selected>Choose...</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Calculate</button>
+    </form>
+{% endblock %}
+

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="" width="device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../static/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="/static/js/calculators.js"></script>
+    <title>Project Year 4</title>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbar">
+    <a class="navbar-brand" href="#">Fitness Planner</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="../">Home <span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form action="/loginRedirect" method="get">
+            <button type="submit" class="btn btn-danger button">Login</button>
+        </form>
+        <form action="/testfunction" method="get">
+            <button type="submit" class="btn btn-danger button">Calculator</button>
+        </form>
+        <form action="/profile" method="get">
+            <button type="submit" class="btn btn-danger button">Program</button>
+        </form>
+    </div>
+</nav>
+
+
+{% include 'partial/navigation.html' %}
+{% block content %}
+{% endblock %}
+{#<div id="footer">#}
+{#    <footer class="bg-light text-center text-lg-start footer">#}
+{#        <!-- Copyright -->#}
+{#        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">#}
+{#            © 2021 Copyright:#}
+{#            <a class="text-dark" href="https://mdbootstrap.com/">Fitness Planer</a>#}
+{#        </div>#}
+{#        <!-- Copyright -->#}
+{#    </footer>#}
+{#</div>#}
+
+
+</div>
+</body>
+</html>
