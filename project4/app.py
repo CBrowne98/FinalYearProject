@@ -5,10 +5,10 @@ import joblib
 app = Flask(__name__)
 
 app.config
-app.config['MYSQL_HOST'] = 'firstdatabase.cdclx9ozp7gb.eu-west-1.rds.amazonaws.com'
-app.config['MYSQL_USER'] = 'admin'
-app.config['MYSQL_PASSWORD'] = 'ProjectPassword'
-app.config['MYSQL_DB'] = 'demoData'
+app.config['MYSQL_HOST'] = ''
+app.config['MYSQL_USER'] = ''
+app.config['MYSQL_PASSWORD'] = ''
+app.config['MYSQL_DB'] = ''
 
 app.secret_key = 'abcd'
 
