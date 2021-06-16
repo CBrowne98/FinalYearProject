@@ -1,5 +1,5 @@
 # Final Year Project
-Final year project for my NFQ level 8/Honours Bachelor's of Science degree.
+Final year project for my NFQ level 8/Honours Bachelor of Science degree.
 
 ## Description
 
